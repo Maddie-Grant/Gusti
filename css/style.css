@@ -1,0 +1,962 @@
+/*Burger menu er lavet med hjælp fra https://github.com/itaddiction/responsivenav*/
+* {
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+header {
+    width: 100%;
+
+}
+
+/*Sign up form er lavet med: https://codepen.io/erikapdx/pen/BnfjH: ;*/
+form {
+    max-width: 450px;
+    margin: 1%;
+    top: 70%;
+    left: 30%;
+    box-sizing: border-box;
+}
+
+
+.description {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.button {
+    height: 40px;
+    border: none;
+    width: 80px;
+}
+
+
+#email {
+    width: 200px;
+    background: #FDFCFB;
+    font-family: inherit;
+    color: #737373;
+    font-size: .85rem;
+    letter-spacing: 1px;
+    text-indent: 10%;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #eea200;
+}
+
+
+#submit {
+    height: 46px;
+    width: 100px;
+    background: #eea200;
+    font-family: inherit;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+
+#submit:hover {
+    background: darkred;
+}
+
+.btn:hover {
+    background: darkred;
+    transition: background .3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    outline: 2px solid steelblue;
+    box-shadow: 0 0 2px steelblue;
+}
+
+/*---------Sign up end---------*/
+.wrapper {
+    width: 90%;
+    margin: auto;
+
+}
+
+.pleje {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pleje {
+    font-size: 5vw;
+    margin-right: 5px;
+
+
+}
+
+.infographic {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/*NAVIGATION - responsiv med flexbox*/
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin: 0 .5em;
+}
+
+#logo-burger a {
+    margin-right: auto;
+    width: 100px;
+}
+
+.top-box {
+    background-color: white;
+    opacity: 0.4;
+    height: 120px;
+    z-index: 1;
+}
+
+a {
+    text-transform: uppercase;
+    line-height: 40px;
+    text-decoration: none;
+    color: maroon;
+    padding: 0 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+.menu {
+
+    z-index: 3;
+    position: absolute;
+    float: left;
+
+}
+
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: maroon;
+    line-height: 50px;
+
+
+}
+
+#logo-burger {
+
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 66px;
+    background-size: contain;
+    top: 68px;
+    left: 30px;
+    z-index: 5;
+}
+
+
+
+label {
+    line-height: 70px;
+    width: 26px;
+    position: relative;
+    z-index: 4;
+}
+
+#toggle {
+    display: none;
+}
+
+article {
+    width: 90%;
+    line-height: 1.5;
+
+}
+
+.hero-text {
+    font-size: 4vw;
+    color: white;
+    position: absolute;
+    top: 200px;
+    right: 15%;
+    z-index: 1;
+    text-shadow: 2px 2px #020254;
+    font-family: 'Limelight', cursive;
+
+}
+
+.gusti-hero {
+    font-size: 8vw;
+    font-family: 'Sonsie One', sans-serif;
+    letter-spacing: 1.5px;
+
+}
+
+.pleje-hero {
+    font-size: 8vw;
+    font-family: 'Sonsie One', sans-serif;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px #020254;
+    color: white;
+    display: inline-block;
+    margin-left: 10vw;
+
+}
+
+.hero-text-p {
+    font-size: 2.9vw;
+    color: white;
+    position: absolute;
+    top: 300px;
+    right: 5%;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 1px 1px #020254;
+    font-family: 'Limelight', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+strong {
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+}
+
+strong.kunde-h1 {
+    font-size: 1.7rem;
+}
+
+article p::first-letter {
+    font-size: 1.3rem;
+}
+
+h1,
+h2 {
+    font-family: 'open sans';
+}
+
+#grid-container img {
+    border: 0.5px solid grey;
+    width: 90%;
+}
+
+/*kontaktformular*/
+
+.wrapper-kontakt {
+    width: 100%;
+    max-width: 680px;
+    margin: 5px auto 0;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 10;
+    font-family: 'Open Sans';
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    letter-spacing: 1px;
+}
+
+.form {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #EEA200;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: steelblue;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125),
+        0 0 8px rgba(76, 161, 175, 0.5);
+}
+
+.form .label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.top-form .inner-form {
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+
+}
+
+.top-form .inner-form:last-child {
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea {
+    height: 120px;
+}
+
+.btn {
+    background: #EEA200;
+    -webkit-background: #EEA200;
+    -ms-background: #EEA200;
+
+    width: 200px;
+    -webkit-width: 200px;
+    -ms-width: 200px;
+
+    padding: 10px 0;
+    -webkit-padding: 10px 0;
+    -ms-padding: 10px 0;
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+
+    text-align: center;
+    -webkit-text-align: center;
+    -ms-text-align: center;
+
+    text-transform: uppercase;
+    -webkit-text-transform: uppercase;
+    -ms-text-transform: uppercase;
+
+    color: #fff;
+    -webkit-color: #fff;
+    -ms-color: #fff;
+
+    letter-spacing: 2px;
+    -webkit-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+
+    cursor: pointer;
+    -webkit-cursor: pointer;
+    -ms-cursor: pointer;
+
+    box-shadow: 1px 1px .9px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 1px 1px .9px rgba(0, 0, 0, .5);
+    -ms-box-shadow: 1px 1px .9px rgba(0, 0, 0, .5);
+}
+
+.label {
+    font-family: 'Open Sans';
+}
+
+
+.btn {
+    font-family: 'Open Sans';
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+address {
+    display: block;
+    color: white;
+    letter-spacing: 0.8px;
+    text-align: center;
+    opacity: .6;
+    margin: 0 auto;
+}
+
+/*-----------------media query--------------*/
+@media only screen and (max-width: 767px) {
+
+    /*Styling af header og nav*/
+    label {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 2.3rem;
+        margin-left: 70vw;
+        margin-top: -86%;
+    }
+
+
+    .wrapper {
+        width: 100%;
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+        margin-top: -20px;
+        margin-left: -20px;
+
+    }
+
+    .top-box {
+        height: 100px;
+    }
+
+    header {
+        min-height: 250px;
+        background-size: contain;
+        background-image: url(../images/bag-bagground-pixa.gif);
+        -webkit-background-image: url(../images/bag-bagground-pixa.gif);
+        -ms-background-image: url(../images/bag-bagground-pixa.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: .1px solid #EAEAEB;
+        margin: 0;
+        background-color: white;
+        font-size: 0.9rem;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+
+    /*styling af main*/
+    .hero-text {
+        font-size: 3vw;
+        color: white;
+        position: absolute;
+        top: 95px;
+        left: 52%;
+        z-index: 1;
+        text-shadow: 2px 2px #020254;
+        font-family: 'Limelight', cursive;
+
+    }
+
+    .gusti-hero {
+        font-family: serif;
+        font-size: 4vw;
+        font-family: 'Sonsie One', sans-serif;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-text-p {
+        font-size: 3vw;
+        color: white;
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        text-align: center;
+        z-index: 1;
+        text-shadow: 1px 1px #020254;
+        font-family: 'Limelight', sans-serif;
+        letter-spacing: 1.5px;
+    }
+
+    p.intro {
+        width: 85%;
+        margin: 10px auto 20px;
+
+    }
+
+    h1.intro {
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1.pleje-hero {
+        margin-left: 55vw;
+        margin-top: 50px;
+    }
+
+    #pleje.hero-text {
+        margin-top: 30px;
+
+    }
+
+    #kontakt {
+        font-size: 8vw;
+    }
+
+    #btn-galleri {
+        margin: 10px auto;
+    }
+
+    #grid-container {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+
+    .pencil-case {
+        width: 100%;
+
+    }
+
+    .backpack-nature {
+        width: 100%;
+    }
+
+    .beach {
+        width: 100%;
+    }
+
+    .by-the-water {
+        width: 100%;
+    }
+
+    .backpack {
+        width: 100%;
+    }
+
+    .cafe {
+        width: 100%;
+    }
+
+    .camera-bag {
+        width: 100%;
+    }
+
+    .open-bag {
+        width: 100%;
+    }
+
+    .diy {
+        width: 100%;
+    }
+
+    .backpack-camera {
+        width: 100%;
+    }
+
+    .work {
+
+        width: 100%;
+    }
+
+    .wallet {
+
+        width: 100%;
+    }
+
+    .form-news {
+        max-width: 90%;
+    }
+
+    #submit {
+        font-size: .85rem;
+    }
+
+    /*Styling af footer*/
+    footer {
+        background-image: url(../images/leather-background-footer-max-768px.jpg);
+        -webkit-background-image: url(../images/leather-background-footer-max-768px.jpg);
+        -ms-background-image: url(../images/leather-background-footer-max-768px.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    #flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 8px;
+    }
+
+    .input {
+        margin: 15px;
+    }
+
+    address {
+        display: none;
+    }
+
+    .button {
+        width: 62px;
+
+    }
+
+    #submit.button {
+        font-size: .7rem;
+    }
+
+    #email.button {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .pleje {
+        padding: 30px;
+        background-color: white;
+    }
+
+
+    #logo {
+        width: 100px;
+        height: auto;
+        margin-top: -49px;
+    }
+
+    header {
+        width: auto;
+        height: 500px;
+        background-image: url(../images/bag-bagground-pixa.gif);
+        -webkit-background-image: url(../images/bag-bagground-pixa.gif);
+        -ms-background-image: url(../images/bag-bagground-pixa.gif);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        min-width: 95%;
+        margin-top: -60px;
+
+    }
+
+    .menu a {
+        margin: 0 .45em;
+
+    }
+
+    .menu a:hover {
+        background-color: #ffffff;
+        color: #EEA200;
+        transition: ease-in-out 0.3s;
+        transition-delay: .1s;
+        border-radius: 5px;
+    }
+
+    /*Dette fjerner burgermenu ikonet*/
+    label {
+        display: none;
+    }
+
+    /*Styling af main*/
+
+    #btn-galleri {
+        width: 20vw;
+        margin: 20px auto 80px auto;
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        max-width: 100%;
+
+
+    }
+
+
+    #grid-container img {
+        filter: sepia(100%);
+        transition: .2s ease-in-out;
+        border-radius: 2.5px;
+        margin: auto;
+
+    }
+
+    #grid-container img:hover {
+        filter: sepia(0);
+
+    }
+
+    .pencil-case {
+        grid-area: 1/1/2/2;
+    }
+
+    .backpack-nature {
+        grid-area: 1/2/2/3;
+    }
+
+    .beach {
+        grid-area: 2/1/3/2;
+    }
+
+    .by-the-water {
+        grid-area: 2/2/3/3;
+    }
+
+    .backpack {
+        grid-area: 3/1/4/2;
+    }
+
+    .cafe {
+        grid-area: 3/2/4/3;
+    }
+
+    .camera-bag {
+        grid-area: 4/1/5/2;
+    }
+
+    .open-bag {
+        grid-area: 4/2/5/3;
+    }
+
+    .diy {
+        grid-area: 5/1/6/2;
+    }
+
+    .backpack-camera {
+        grid-area: 5/2/6/3;
+    }
+
+    .work {
+        grid-area: 6/1/7/2;
+    }
+
+    .wallet {
+        grid-area: 6/2/7/3;
+    }
+
+    p.intro {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    h1.intro {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #pleje {
+        margin-top: -2vw;
+    }
+
+    h1.pleje-hero {
+        margin-top: 11vw;
+        margin-left: 60vw;
+    }
+
+    #kontakt {
+        font-size: 9vw;
+    }
+
+    /*Styling af footer*/
+    footer {
+        background-image: url(../images/leather-background-footer-min-768px.jpg);
+        -webkit-background-image: url(../images/leather-background-footer-min-768px.jpg);
+        -ms-background-image: url(../images/leather-background-footer-min-768px.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    #flex-container {}
+
+    #email {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    article {
+        width: 50%;
+        text-align: justify;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    .hero-text {
+        top: 200px;
+        font-size: 3.5rem;
+    }
+
+    .hero-text-p {
+        top: 310px;
+        right: 10px;
+        width: 600px;
+    }
+
+
+    /*grid kundegalleri*/
+    #grid-container {}
+
+    .wrapper #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        margin-top: 40px;
+        align-items: center;
+
+    }
+
+    .pencil-case {
+        grid-area: 1/1/2/2;
+    }
+
+    .backpack-nature {
+        grid-area: 1/2/2/3;
+    }
+
+    .backpack {
+        grid-area: 1/3/2/4;
+    }
+
+    .beach {
+        grid-area: 2/1/3/2;
+    }
+
+    .by-the-water {
+        grid-area: 2/2/3/3;
+    }
+
+    .camera-bag {
+        grid-area: 2/3/3/4;
+    }
+
+    .cafe {
+        grid-area: 3/1/4/2;
+    }
+
+    .diy {
+        grid-area: 3/2/4/3;
+    }
+
+    .backpack-camera {
+        grid-area: 3/3/4/4;
+    }
+
+    .open-bag {
+        grid-area: 4/1/5/2;
+    }
+
+    .work {
+        grid-area: 4/2/5/3;
+    }
+
+    .wallet {
+        grid-area: 4/3/5/4;
+    }
+
+
+}
+
+@media only screen and (min-width: 1150px) {
+
+    /*    Styling af header og nav*/
+    header {
+        background-size: cover;
+        height: 650px;
+    }
+
+    #logo {
+        margin-left: 12vw;
+    }
+
+
+    .menu a {
+        margin-right: 2%;
+    }
+
+    .menu {
+        margin-right: 10%;
+
+    }
+
+    /*Styling af main*/
+    .hero-text {
+        top: 200px;
+
+    }
+
+    .hero-text-p {
+        top: 400px;
+        left: 45%;
+        font-size: 2vw;
+        width: 40vw
+    }
+
+}
